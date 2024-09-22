@@ -1,6 +1,10 @@
 # TameZombieHorse
 
-![image](https://github.com/Ringoame196/VideoStorage/blob/main/videos/TameZombieHorse.mp4)
+
+
+https://github.com/user-attachments/assets/6e69dab3-b515-404e-973e-1949090769eb
+
+
 
 ## プラグイン説明
 ゾンビ馬に乗れるようにするプラグイン
