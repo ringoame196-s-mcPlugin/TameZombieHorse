@@ -30,6 +30,7 @@ class PlayerInteractEntityEvent : Listener {
             val location = zombie.location
             val sound = Sound.ENTITY_ZOMBIE_VILLAGER_CURE
             val particle = Particle.EXPLOSION_LARGE
+            playerItem.amount --
             player.playSound(location, sound, 1f, 1f) // 音を鳴らす
             location.world?.spawnParticle(particle, location, 30, 0.5, 0.5, 0.5, 0.05) // パーティクルを出す
             summonZombieHorse(zombie, player) // 召喚するゾンビホース
