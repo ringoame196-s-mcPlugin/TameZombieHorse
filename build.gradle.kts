@@ -40,17 +40,6 @@ configure<BukkitPluginDescription> {
     version = pluginVersion
     apiVersion = "1." + pluginVersion.split(".")[1]
     author = "ringoame196_s_mcPlugin"
-    /*
-    コマンド追加用
-    commands {
-        register("test") {
-            description = "This is a test command!"
-            aliases = listOf("t")
-            permission = "testplugin.test"
-            usage = "Just run the command!"
-        }
-    }
-    */
 }
 
 tasks.withType<ShadowJar> {
