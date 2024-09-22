@@ -8,7 +8,7 @@ class Main : JavaPlugin() {
     override fun onEnable() {
         super.onEnable()
         val plugin = this
-        server.pluginManager.registerEvents(Events(), plugin)
         server.pluginManager.registerEvents(PlayerInteractEntityEvent(plugin), plugin)
+        server.pluginManager.registerEvents(PlayerInteractEvent(), plugin)
     }
 }
