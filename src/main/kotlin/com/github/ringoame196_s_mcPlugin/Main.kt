@@ -1,6 +1,7 @@
 package com.github.ringoame196_s_mcPlugin
 
-import com.github.ringoame196_s_mcPlugin.events.Events
+import com.github.ringoame196_s_mcPlugin.events.PlayerInteractEntityEvent
+import com.github.ringoame196_s_mcPlugin.events.PlayerInteractEvent
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
@@ -8,5 +9,6 @@ class Main : JavaPlugin() {
         super.onEnable()
         val plugin = this
         server.pluginManager.registerEvents(Events(), plugin)
+        server.pluginManager.registerEvents(PlayerInteractEntityEvent(plugin), plugin)
     }
 }
